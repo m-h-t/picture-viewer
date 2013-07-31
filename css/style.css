@@ -1,0 +1,217 @@
+body {
+	font-family: "Overlock", sans-serif;
+}
+
+.pictures {
+	margin-left: auto;
+	margin-right: auto;
+	width: 750px;
+}
+
+.thumbContainer {
+	position: relative;
+	display: inline;
+	
+	/* Mouse Hover effect 
+	-webkit-transition: .2s ease-in-out opacity;
+	-moz-transition: .2s ease-in-out opacity;
+	-o-transition: .2s ease-in-out opacity;
+	transition: .2s ease-in-out opacity;*/	
+    
+	/* Fade in Effect 
+	-webkit-animation-name: FadeIn;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-duration: 3s;*/
+}
+
+.thumbContainer:hover{
+	opacity: 0.3;
+}
+
+.overlayContainer {
+	display: table;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%; 
+	height: 100%;
+	z-index: 10;
+}
+
+.overlayBlack {
+	display: table;
+	background-color: #000;
+	opacity: 0.8;
+	filter: alpha(opacity=70);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%; 
+	height: 100%;
+	z-index: 10;
+}
+
+.overlayFloater {
+	min-height: 10em;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.overlayImage {
+	opacity: 1.0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.linkToMediumPicture {
+}
+
+#sidebar {
+	position: fixed;
+	float: left;
+	width: 19%;
+	font-family: "Overlock", sans-serif;
+	/*right: 3.5%;*/
+}
+
+#main {
+	position: relative;
+	float: left;
+	/*width: 67%;
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: grey;
+	padding-left: 3%;*/
+	margin-left: 25.7%;
+}
+
+#photos {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: grey;
+	padding-left: 3%;
+	/*height: 796px;*/
+}
+
+#wrap {
+	position: absolute;
+	left: 3%;
+	top: 5%;
+	width: 80%;
+	padding-bottom: 2%;
+}
+
+#top {
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: grey;
+}
+
+#nav {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	color:#464646;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: grey;
+}
+
+#headline {
+	font-family: "Overlock", sans-serif;
+}
+	
+#pictureInformation {
+	color:#464646;
+}
+
+#searchQuery {
+	width: 63%;	
+}
+
+#searchButton {
+	float: right;
+	margin-right: 3%;
+	width: 28%;
+	/* Mouse Hover effect */
+	-webkit-transition: .2s ease-in-out opacity;
+	-moz-transition: .2s ease-in-out opacity;
+	-o-transition: .2s ease-in-out opacity;
+	transition: .2s ease-in-out opacity;	
+}
+
+#searchButton:hover {
+	opacity: 0.8;
+}
+
+#nextPage {
+	/* I decided to not use the nextPage button anymore because
+	 * it wasn't enhancing user experience
+	 */
+	display: none;
+	position:fixed;
+	top: 41.5%;
+	left:1195px;
+	/*right: 22%;
+	margin-left: 700px;*/
+	
+	/* Mouse Hover effect */
+	-webkit-transition: .2s ease-in-out opacity;
+	-moz-transition: .2s ease-in-out opacity;
+	-o-transition: .2s ease-in-out opacity;
+	transition: .2s ease-in-out opacity;	
+}
+
+#nextPage:hover {
+	opacity: 0.3;
+}
+
+#nextPageButton {
+	width: 60px;
+}
+
+#appendButton {
+	height: 60px;
+	margin-left: 45%;
+	margin-top: 25px;
+	/* Mouse Hover effect */
+	-webkit-transition: .2s ease-in-out opacity;
+	-moz-transition: .2s ease-in-out opacity;
+	-o-transition: .2s ease-in-out opacity;
+	transition: .2s ease-in-out opacity;	
+}
+
+#appendButton:hover {
+	opacity: 0.3;
+}
+
+.previewThumb {
+	vertical-align: top;
+	margin: 0px;
+	height: 75px;
+	width: 75px;
+	/* Mouse Hover effect */
+	-webkit-transition: .2s ease-in-out opacity;
+	-moz-transition: .2s ease-in-out opacity;
+	-o-transition: .2s ease-in-out opacity;
+	transition: .2s ease-in-out opacity;
+    
+      /* Fade in Effect */
+	-webkit-animation-name: FadeIn;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-duration: 3s;
+}
+
+@-webkit-keyframes FadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+.previewThumb:hover{
+	opacity: 0.3;	
+}

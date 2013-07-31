@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+
+ 	<title>Flickr Demo</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Overlock' rel='stylesheet' type='text/css'>
+	<script src="js/script.js"></script> 
+
+</head>
+
+<body>
+	<div id="wrap">
+		<div id="sidebar">
+			<div id="top">
+				<h1 id="headline">Flickr Picture Viewer</h1>
+			</div>
+			<div id="nav">
+				<form action"#" onSubmit="return false" id="searchForm">
+					<input type="text" name="searchString" value="" placeholder="Sunflower" id="searchQuery">
+					<input type="submit" value="Search" onClick="searchImages(this.form)" id="searchButton">
+				</form>
+			</div>
+			<div id="pictureInformation">
+				<table>
+					<tr><td>Title:</td><td id="pictureTitle"></td></tr>
+				</table> 			
+			</div>
+		</div>
+		<div id="main">
+			<div class="pictures" id="photos">
+	
+			</div>
+		
+			<div id="nextPage">
+				<form action="#" onSubmit="return false" id="nextPageForm">
+					<input type="image" src="ArrowRight.png" value="Next Page" onClick="showNextPage(this.form)" id="nextPageButton"> 
+					<input type="hidden" value="1" id="pageNumber">
+				</form>		
+			</div>
+			<form action="#" onSubmit="return false" id="appendImagesForm">
+					<input type="image" src="img/ArrowDown.png" value="Next Page" onClick="appendImages()" id="appendButton"> 
+			</form>
+		</div>
+	</div>
+
+
+	
+</body>
+
+</html>
